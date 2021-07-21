@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Для студентов
+{% endblock %}
+
+{% block body %}
+    <div class="container mt-5" id="student" style="padding-top: 150px">
+        <h1> Добавление email </h1>
+        <form method="post">
+            <input type="email" name="email" id="email" class="form-control" placeholder='Введите вашу почту'>
+            <input type="text" name="first_name" id="first_name" class="form-control" placeholder="Введите ваше имя">
+            <input type="text" name="second_name" id="second_name" class="form-control" placeholder="Введите вашу фамилию">
+            <input type="text" name="patronymic" id="patronymic" class="form-control" placeholder="Введите ваше отчество">
+            <select name="group" id="group" class="form-control" placeholder="Выберите группу">
+              <option value="">Выберите группу</option>
+              <option value="ИБ1-1б">ИБ1-1б</option>
+              <option value="ИБ1-2б">ИБ1-2б</option>
+              <option value="ИБ1-3б">ИБ1-3б</option>
+            </select>
+            <input type="submit" class="btn btn-success" value="Отправить">
+        </form>
+    </div>
+{% endblock %}

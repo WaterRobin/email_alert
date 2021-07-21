@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Для преподавателей
+{% endblock %}
+
+{% block body %}
+<div >
+    <form method="post">
+        <input type="text" name="title" id="title" class="form-control" placeholder="Введите название сообщения">
+        <textarea name="description" id="description" class="form-control" placeholder="Описание"></textarea>
+        <select name="group" id="group" class="form-control" >
+          <option value="">Выберите группу</option>
+          <option value="ИБ1-1б">ИБ1-1б</option>
+          <option value="ИБ1-2б">ИБ1-2б</option>
+          <option value="ИБ1-3б">ИБ1-3б</option>
+        </select>
+        <input type="submit" class="btn btn-success" value="Отправить">
+    </form>
+</div>
+{% endblock %}
