@@ -1,0 +1,61 @@
+
+#footer{
+    position: fixed;
+    left: 0;
+    right:0;
+    bottom:0;
+}
+
+.title_ {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 41%;
+    left: 50%;
+    margin: -125px 0 0 -125px;
+}
+
+.input {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin: -125px 0 0 -125px;
+}
+
+.input2 {
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    top: 55%;
+    left: 53%;
+    margin: -125px 0 0 -125px;
+}
+
+.register_link {
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    top: 90%;
+    left: 47%;
+    margin: -125px 0 0 -125px;
+}
+
+.error {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 63%;
+    left: 49%;
+    margin: -125px 0 0 -125px;
+}
+
+.error_reg {
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    top: 80%;
+    left: 46%;
+    margin: -125px 0 0 -125px;
+}

@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Регистрация
+{% endblock %}
+
+{% block body %}
+ <div class="container" id="student" style="padding-top: 150px">
+        <h2> Регистрация </h2>
+        <form method="post">
+            <input type="text" name="email" id="email" class="form-control" placeholder='Введите вашу почту'>
+            <input type="text" name="full_name" id="full_name" class="form-control" placeholder="Введите ваши фамилию и имя">
+            <input type="text" name="patronymic" id="patronymic" class="form-control" placeholder="Введите ваше отчество">
+            <input type="password" name="password" id="password" class="form-control" placeholder="Введите пароль">
+            <input type="password" name="password2" id="password2" class="form-control" placeholder="Повторите пароль">
+            <select name="group" id="group" class="form-control" placeholder="Выберите группу:">
+              <option value="">Выберите группу:</option>
+              <option value="ИБ1-1б">ИБ1-1б</option>
+              <option value="ИБ1-2б">ИБ1-2б</option>
+              <option value="ИБ1-3б">ИБ1-3б</option>
+              <option value="ИБ2-1б">ИБ2-1б</option>
+              <option value="ИБ2-2б">ИБ2-2б</option>
+              <option value="ИБ2-3б">ИБ2-3б</option>
+              <option value="Преподаватель">Преподаватель</option>
+            </select>
+            <input type="submit" class="btn btn-success" value="Отправить">
+        </form>
+    </div>
+
+<div class="error_reg">
+      {% if error %}
+        <h5 class=error>{{ error }}</h5>
+      {% endif %}
+</div>
+
+
+{% endblock %}
